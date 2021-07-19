@@ -6,7 +6,9 @@
 # Run
 
 - mvn install
-- docker-compose up
+- mvn spring-boot:run
+# TODO
+- docker-compose up (it's not working. Due a  problem cgjresszgg api cannot be accessed with Docker )
 
 ## Backend points
 
