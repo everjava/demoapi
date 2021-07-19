@@ -1,5 +1,9 @@
 FROM adoptopenjdk/openjdk11:latest
-VOLUME /tmp
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+FROM maven
+
+WORKDIR "/app"
+ADD . /app
+RUN mvn clean package install
+
+
+ENTRYPOINT ["java", "-jar", "target/demoapi-0.0.1-SNAPSHOT.jar"]
