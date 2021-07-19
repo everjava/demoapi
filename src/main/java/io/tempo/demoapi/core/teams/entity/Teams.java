@@ -12,8 +12,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Teams {
-    public String id;
-    public String name;
-    public String teamLeadId;
-    public List<String> teamMemberIds;
+    private String id;
+    private String name;
+    private String teamLeadId;
+    private List<String> teamMemberIds;
 }
