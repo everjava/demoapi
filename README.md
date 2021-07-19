@@ -23,5 +23,6 @@ team id.
 - Add a role to a user: http://localhost:8080/api/v1/user/{id}/role/{role_name}
 - List all teams: http://localhost:8080/api/v1/teams/
 - Show specific team: http://localhost:8080/api/v1/teams/{id}
+- Show current roles: http://localhost:8080/api/v1/role
 
 
